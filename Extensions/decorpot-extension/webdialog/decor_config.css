@@ -1,0 +1,21 @@
+body {
+	font-family: 'Poppins', sans-serif !important;
+}
+
+.main-heading {
+	border-bottom: 2px solid #ccc;
+	background: #333;
+	color: white;
+	height: 60px;
+	text-align: center;
+}
+.mand {
+	color: red;
+}
+label {
+	font-size: 14px;
+	font-weight: 500;
+}
+.martop {
+	margin-top: 2em;
+}

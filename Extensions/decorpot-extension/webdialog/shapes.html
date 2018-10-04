@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset='utf-8'>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="shapes.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<p><h4>Decorpot Shapes</h4></p>
+			</div>
+
+			<div class="col-md-12" style="text-align: center;">
+				<input type="radio" name="shapes" id="shapelist" onclick="checkshape()">&nbsp;2D&emsp;&emsp;
+				<input type="radio" name="shapes" id="2dlist" onclick="check2()">&nbsp;3D&emsp;&emsp;
+			</div>
+			
+			<div class="col-md-6" id="shapes" style="display: none; margin-top: 1em;">
+				<div class="form-group">
+					<select class="form-control" id="slist" onchange="changeshape()">
+						<option value="0">Select 2D</option>
+						<option value="1">Square</option>
+						<option value="2">Rectangle</option>
+						<option value="3">Circle</option>
+					</select>
+				</div>
+			</div>
+
+			<div id="square" class="2img" style="display: none; width: 100%;">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Length</label>
+						<p><input type="text" id="square_area" class="form-control" placeholder="Your Area..."></p>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="text-align:center;">
+					<div class="form-group">
+						<a href="#" class="btn btn-info" onclick="shapedraw();">Create Shape</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="rectangle" class="2img" style="display: none; width: 100%;">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Length</label>
+						<p><input type="text" id="rectlength" class="form-control" placeholder="Your Length..."></p>
+					</div>
+					<div class="form-group">
+						<label>Width</label>
+						<p><input type="text" id="rectwidth" class="form-control" placeholder="Your Width..."></p>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="text-align:center;">
+					<div class="form-group">
+						<a href="#" class="btn btn-info" onclick="shapedraw();">Create Shape</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="circle" class="2img" style="display: none; width: 100%;">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Radius</label>
+						<p><input type="text" id="cir_radius" class="form-control" placeholder="Your Radius..."></p>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="text-align:center;">
+					<div class="form-group">
+						<a href="#" class="btn btn-info" onclick="shapedraw();">Create Shape</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6" id="2dimglist" style="display: none; margin-top: 1em;">
+				<div class="form-group">
+					<select class="form-control" id="2list" onchange="change2d()">
+						<option value="0">Select 3D</option>
+						<option value="1">Cube</option>
+						<option value="2">Cylinder</option>
+						<option value="3">Cone</option>
+						<option value="4">Pyramid</option>
+					</select>
+				</div>
+			</div>
+
+			<div id="cube" class="3img" style="display: none; width: 100%;">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Length</label>
+						<p><input type="text" id="cube_length" class="form-control" placeholder="Your Length..."></p>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="text-align:center;">
+					<div class="form-group">
+						<a href="#" class="btn btn-info" onclick="drawshape();">Create Shape</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="cylinder" class="3img" style="display: none; width: 100%;">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Length</label>
+						<p><input type="text" id="cyl_length" class="form-control" placeholder="Your Length..."></p>
+					</div>
+
+					<div class="form-group">
+						<label>Radius</label>
+						<p><input type="text" id="cyl_radius" class="form-control" placeholder="Your Radius..."></p>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="text-align:center;">
+					<div class="form-group">
+						<a href="#" class="btn btn-info" onclick="drawshape();">Create Shape</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="cone" class="3img" style="display: none; width: 100%;">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Length</label>
+						<p><input type="text" id="con_length" class="form-control" placeholder="Your Length..."></p>
+					</div>
+
+					<div class="form-group">
+						<label>Radius</label>
+						<p><input type="text" id="con_radius" class="form-control" placeholder="Your Radius..."></p>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="text-align:center;">
+					<div class="form-group">
+						<a href="#" class="btn btn-info" onclick="drawshape();">Create Shape</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="pyramid" class="3img" style="display: none; width: 100%;">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Length</label>
+						<p><input type="text" id="pyd_length" class="form-control" placeholder="Your Length..."></p>
+					</div>
+
+					<div class="form-group">
+						<label>Width</label>
+						<p><input type="text" id="pyd_width" class="form-control" placeholder="Your Width..."></p>
+					</div>
+
+					<div class="form-group">
+						<label>Height</label>
+						<p><input type="text" id="pyd_height" class="form-control" placeholder="Your Height..."></p>
+					</div>
+				</div>
+
+				<div class="col-md-12" style="text-align:center;">
+					<div class="form-group">
+						<a href="#" class="btn btn-info" onclick="drawshape();">Create Shape</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-12" style="text-align:center;margin-top: 1em;">
+				<div class="form-group">
+					<a href="#" class="btn btn-danger" onclick="cancel();">Cancel</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

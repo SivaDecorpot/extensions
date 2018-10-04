@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset='utf-8'>
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="settings.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<p><h4>Decorpot Settings</h4></p>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label>Point 1:</label>
+					<p><input type="text" id="x1" value="0.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="y1" value="0.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="z1" value="0.0" size="10" maxlength="6" class="form-control"></p>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label>Point 2:</label>
+					<p><input type="text" id="x2" value="10.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="y2" value="0.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="z2" value="0.0" size="10" maxlength="6" class="form-control"></p>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label>Point 3:</label>
+					<p><input type="text" id="x3" value="10.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="y3" value="10.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="z3" value="0.0" size="10" maxlength="6" class="form-control"></p>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label>Point 4:</label>
+					<p><input type="text" id="x4" value="0.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="y4" value="10.0" size="10" maxlength="6" class="form-control"></p>
+					<p><input type="text" id="z4" value="0.0" size="10" maxlength="6" class="form-control"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12" style="text-align: center;">
+		<div class="form-group">
+			<a href="#" class="btn btn-danger" onclick="cancel();">Cancel</a>
+			<input type="submit" onclick="sendpoints();" value="Create Face" class="btn btn-info">
+		</div>
+	</div>
+</body>
+</html>

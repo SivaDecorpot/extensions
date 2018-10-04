@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="decor_config.js"></script>
+	<link rel="stylesheet" type="text/css" href="decor_config.css">
+
+	<style type="text/css">
+		
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row main-heading"><div class="col-md-12"><h4>Decorpot Configuration</h4></div></div>
+
+		<div class="row martop">
+			<div class="form-group">
+				<select name="category" class="form-control" id="main-category" class="form-control" onchange="changeMainCategory()">
+					<option value="0" selected="selected">Select Category</option>	
+					<option value="Kitchen - Base Unit">Kitchen - Base Unit</option>
+					<option value="Kitchen - Top Unit (H - 600)">Kitchen - Top Unit (H - 600)</option>
+					<option value="Kitchen - Top Unit (H - 720)">Kitchen - Top Unit (H - 720)</option>
+					<option value="Kitchen - Tall Unit">Kitchen - Tall Unit</option>
+					<option value="Hinged Wardrobe - Without Loft">Hinged Wardrobe - Without Loft</option>
+					<option value="Hinged Wardrobe - With Loft">Hinged Wardrobe - With Loft</option>
+					<option value="Sliding Wardrobe - Without Loft">Sliding Wardrobe - Without Loft</option>
+					<option value="Sliding Wardrobe - With Loft">Sliding Wardrobe - With Loft</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row martop"><div id="load_subcategory"></div></div>
+		<div class="row martop"><div id="load_sketchup"></div></div>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="height_config.js"></script>
+
+	<style type="text/css">
+		body { font-family: 'Poppins', sans-serif !important; }
+		.main-heading { 	border-bottom: 2px solid #ccc;	background: #333;	color: white; height: 60px; text-align: center;}
+		.mand {color: red;}
+		label {font-size: 14px; font-weight: 500;}
+		.martop {margin-top: 2em;}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row main-heading">
+			<div class="col-md-12"><p><h4>Decorpot - Height Configuration</h4></p></div>
+		</div>
+
+		<div class="content">
+			<div class="row">
+				<div class="col-sm-4 martop">
+					<div class="form-group">
+						<label>Height (Length) <span class="mand">*</span></label>
+						<input type="text" id="heightval" placeholder="Height" class="form-control" autofocus>
+					</div>
+				</div>
+
+				<div class="col-sm-4 subbtn pull-right">
+					<a href="#" class="btn btn-primary" onclick="getvalue();">Submit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

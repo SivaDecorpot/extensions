@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset='utf-8'>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="dimension.js"></script>
+	<style type="text/css">
+		body {
+			font-family: 'Lato', sans-serif !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12"><p><h4>Decorpot - Export Model with Dimensions</h4></p></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<p>Please select a view :</p>
+
+				<div class="form-group">
+					<select name="selview" class="form-control" id="selview">
+						<option value="0" selected="selected">Please Select</option>
+						<option value="1">Top</option>
+						<!-- <option value="2">Bottom</option> -->
+						<!-- <option value="3">Left</option> -->
+						<option value="4">Right</option>
+						<option value="5">Front</option>
+						<!-- <option value="6">ISO</option> -->
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12" style="text-align: center;">
+			<div class="form-group">
+				<a href="#" class="btn btn-danger" onclick="cancel();">Cancel</a>&emsp;
+				<input type="submit" onclick="getdimension();" value="Export" class="btn btn-primary">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
